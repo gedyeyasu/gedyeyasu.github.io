@@ -3,6 +3,7 @@ body{
 }
 h3, h2{
  color: rgb(61, 61, 186);
+ font-family: 'Times New Roman', Times, serif;
 }
 img {
     height: 150px;
