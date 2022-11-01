@@ -5,7 +5,15 @@ h3, h2{
  color: rgb(61, 61, 186);
  font-family: 'Times New Roman', Times, serif;
 }
-h3>img {
+.content img {
     height: 150px;
     
 }
+ol a {
+    text-decoration: none;
+    color: red;
+}
+dt{
+    color: green;
+}
+
