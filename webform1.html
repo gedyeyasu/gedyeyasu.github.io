@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+            <form action="webform1.html">
+                <label for="email">Email address</label>
+                <input type="email" placeholder="Enter email" name="email" required>
+                <span>We'll never share your email with anyone else.</span>
+                <label for="password">Password</label>
+                <input type="text" placeholder="Password" name="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{10,}$"  title="A password should be more than 10 characters and include letters, number and symbols" required>
+                <label for="url">Url</label>
+                <input type="url" placeholder="Url" name="url" pattern="^(http://|https://).+$" required>
+                <div id="check">
+                    <input type="checkbox" name="check">
+                    <label for="check">Check me out</label>
+                </div>
+                <div id="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

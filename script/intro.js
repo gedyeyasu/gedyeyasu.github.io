@@ -51,11 +51,7 @@ function myFunctionTest(expected, found) {
     return list.reduce((m,r) => (m*r));
   }
   function reverse(str){
-    let res = ""
-    for(let s=str.length-1; s>=0; s--){ 
-      res+=str[s];
-    }
-    return res;
+    return [...str].reduce((a,b)=>b+a);
   }
   
   function filterLongWords(arr, i){
