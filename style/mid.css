@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template-areas:
+        'b b b b b b'
+        'n n n n n n'
+        'a n c c c n'
+        'n n n n n n'
+    ;
+    height: 500px;
+}
+div{
+    min-height: 100px;
+    min-width: 100px;
+}
+
+#banner{
+    background-color: red;
+    grid-area: b;
+}
+
+#nav{
+    background-color: yellow;
+    grid-area: n;
+}
+
+#aside{
+    background-color: aqua;
+    grid-area: a;
+}
+
+#content{
+    background-color: antiquewhite;
+    grid-area: c;
+}

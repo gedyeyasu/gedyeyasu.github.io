@@ -28,6 +28,41 @@
         mocha.run();
 
     </script>
+    <script>
+        function longestNoSpace(...str) {
+  if (str !== null) {
+    let filterdStr = str.filter((s) => !s.includes(" "));
+    if (filterdStr.length == 0) {
+      return 0;
+    } else if (filterdStr.length == 1) {
+      return filterdStr[0].length;
+    } else {
+      return filterdStr.reduce((a, b) => a.length > b.length ? a.length : b.length);
+    }
+  }
+  return 0;
+}
+    </script>
+    <script>
+        describe("longestNoSpace", function () {
+        it("returns 0 if given zero parameters", () => {
+        assert.equal(longestNoSpace(), 0);
+        });
+        it("returns 0 if given a single string that contains a space", () => {
+        assert.equal(longestNoSpace("a test"), 0);
+        })
+        it("returns 0 if given only strings that contains spaces", () => {
+        assert.equal(longestNoSpace("this is","a test"), 0);
+        });
+        it("returns the length of the string if given a single string without a space", () => {
+        assert.equal(longestNoSpace("hello"), 5);
+        });
+        it("returns the length of the longest string if given multiple strings without spaces", () => {
+        assert.equal(longestNoSpace("hello", "world!"), 6);
+        });
+        });
+        
+        </script>
     
 </body>
 
